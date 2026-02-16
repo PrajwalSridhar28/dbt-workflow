@@ -1,0 +1,17 @@
+version: 2
+
+sources:
+  - name: raw_data
+    description: |
+      Raw NYC taxi trip data loaded from BigQuery external tables.
+      Contains both yellow and green taxi trip records for 2019-2020.
+    database: ny-taxi-project-485723
+    schema: zoomcamp
+    tables:
+      - name: yellow_tripdata
+        description: Yellow taxi trips, primarily from Manhattan
+      - name: green_tripdata
+        description: |
+          Green taxi trip records. Green taxis operate primarily in
+          outer boroughs (outside Manhattan).
+
